@@ -1,0 +1,19 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"></stop>
+      <stop offset="100%" stop-color="#2563EB"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="url(#pfGrad)"></rect>
+
+  <!-- Letter P -->
+  <path d="M14 11 H21 C24 11 25 13 25 15 C25 17 24 19 21 19 H17 V26 H14 Z
+           M17 14 V17 H21 C22 17 22.5 16.5 22.5 15.5 C22.5 14.5 22 14 21 14 Z" fill="white"></path>
+
+  <!-- AI dots -->
+  <circle cx="28" cy="14" r="1.5" fill="#22D3EE"></circle>
+  <circle cx="28" cy="20" r="1.5" fill="#22D3EE"></circle>
+</svg>
