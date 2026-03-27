@@ -50,19 +50,19 @@ mongoose
   .catch(err => console.log('❌ MongoDB error:', err));
 
 // --- DEPLOYMENT CONFIGURATION ---
-const path = require('path');
+//  const path = require('path');
 
-// Serve static assets if in production
-if (process.env.NODE_ENV === 'production') {
+// // Serve static assets if in production
+// if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
+  // app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-  // Any route that doesn't match an API route will be redirected to the index.html
-  // Note: Using regex path matching to avoid Express 5.x wildcard parser errors
-  app.get(/.*/, (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
-  });
-}
+//  // Any route that doesn't match an API route will be redirected to the index.html
+ // // Note: Using regex path matching to avoid Express 5.x wildcard parser errors
+ //  app.get(/.*/, (req, res) => {
+  //  res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
+ // });
+// }
 // --------------------------------
 
 const PORT = process.env.PORT || 5000;
